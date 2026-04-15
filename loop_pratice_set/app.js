@@ -178,10 +178,167 @@
 //     program.close()
 // })
 
-let sum = 0;
-for(let i = 1; i<=5;i++){
-    sum += i;
-}
-console.log(sum);
+ // Q13  Write a program to take two numbers from the user and. Find an even number between them.
 
+//  let think = require("readline").createInterface({
+//     input:process.stdin,
+//     output:process.stdout,
+//  })
+// think.question("Enter a starting number:",function(first){
+//     think.question("Enter a end number :",function(second){
+//         let sp = Number(first);
+//         let ep = Number(second);
+//         while(sp <=ep){
+//             if(sp % 2==0){
+//                 console.log(sp);
+                
+//             }
+//             else if(sp++){
+//                 console.log(sp);
+                
+//             }
+//             else{
+//                 console.log("invalid input");
+                
+//             }
+//             sp = sp + 2
+//         }
+//     })
+  
+// })
+
+
+// Q14 Write a program to take two numbers from the user and. Find an odd number between them.
+
+// let take = require("readline").createInterface({
+//     input:process.stdin,
+//     output:process.stdout
+// })
+// take.question("Enter a starting number:",function(first){
+//     take.question("Enter a ending number:",function(second){
+//         let sp = Number(first);
+//         let ep = Number(second);
+//         while(sp<=ep){
+//             if(sp % 2 !==0 ){
+//                 console.log(sp);
+                
+//             }
+//             else if(sp++){
+//                 console.log(sp);
+                
+//             }
+//             else{
+//                 console.log("invalid number");
+                
+//             }
+//             sp = sp + 2
+//         }
+//         take.close()
+//     })
+// })
+
+
+// Q15  Write a program to take two numbers from the user and . find the sum of all even numbers present between them.
+
+// let find = require("readline").createInterface({
+//     input:process.stdin,
+//     output:process.stdout
+// })
+// find.question("Enter a starting number:",function(first){
+//     find.question("Enter a ending number:",function(second){
+//         let sp = Number(first);
+//         let ep = Number(second);
+//         let sum = 0;
+//         while(sp <= ep){
+//             if(sp % 2 == 0){
+//                 sum = sum + sp
+//             }
+//             else if (sp++){
+//                 sum = sum + sp
+//             }
+//             else{
+//                 console.log("invalid number");
+                
+//             }
+//             sp = sp + 2
+//         }
+//         console.log(sum);
+//         find.close()
+        
+//     })
+// })
+
+
+// Q16 Write a program to take two numbers from the user and find the sum of all odd numbers presend between them.
+
+// let them = require("readline").createInterface({
+//     input:process.stdin,
+//     output:process.stdout,
+// })
+// them.question("Enter a starting number:",function(first){
+//     them.question("Enter a ending number:",function(second){
+//         let sp = Number(first);
+//         let ep = Number(second);
+//         let sum = 0;
+//         while(sp<=ep){
+//             if(sp % 2!==0){
+//                 sum = sum + sp
+
+//             }
+//             else if(sp++){
+//                 sum = sum + sp
+//             }
+//             else{
+//                 console.log("invalid number");
+                
+//             }
+//             sp = sp + 2
+//         }
+//         console.log(sum);
+//         them.close()
+        
+//     })
+// })
+
+
+// Q17  Write a program to take two numbers from the user and find the average of all numbers present between them.
+
+// let present = require("readline").createInterface({
+//     input:process.stdin,
+//     output:process.stdout
+    
+// })
+// present.question("Enter a starting number:",function(first){
+//     present.question("Enter a ending number:",function(second){
+//         let sp = Number(first);
+//         let ep = Number(second);
+//         let sum = 0
+//         while(sp <= ep){
+//             sum = sum + sp;
+//             sp = sp + 1
+//         }
+//         console.log(sum / ep);
+//         present.close()
+        
+//     })
+// })
+
+
+// Q18  Write a program to take two numbers from the user, one as a base and second as a power calculate and print.
+
+let one = require("readline").createInterface({
+    input:process.stdin,
+    output:process.stdout
+})
+one.question("Enter a base of number:",function(first){
+    one.question("Enter a power of base:",function(second){
+        let base = Number(first);
+        let power = Number(second);
+        if(base > 0 && power >= 0){
+            console.log(base ** power);
+            
+        }
+        one.close()
+    })
+})
 
