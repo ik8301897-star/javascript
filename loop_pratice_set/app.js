@@ -326,19 +326,166 @@
 
 // Q18  Write a program to take two numbers from the user, one as a base and second as a power calculate and print.
 
-let one = require("readline").createInterface({
-    input:process.stdin,
-    output:process.stdout
-})
-one.question("Enter a base of number:",function(first){
-    one.question("Enter a power of base:",function(second){
-        let base = Number(first);
-        let power = Number(second);
-        if(base > 0 && power >= 0){
-            console.log(base ** power);
+// let one = require("readline").createInterface({
+//     input:process.stdin,
+//     output:process.stdout
+// })
+// one.question("Enter a base of number:",function(first){
+//     one.question("Enter a power of base:",function(second){
+//         let base = Number(first);
+//         let power = Number(second);
+//         if(base > 0 && power >= 0){
+//             console.log(base ** power);
             
-        }
-        one.close()
-    })
-})
+//         }
+//         one.close()
+//     })
+// })
 
+// Q19 Write a program to take a number from the user and count the digit present in that number.
+
+// let digit = require("readline").createInterface({
+//     input:process.stdin,
+//     output:process.stdout
+// })
+// digit.question("Enter a number:",function(first){
+//     let num = Number(first);
+//     let count = 0;
+//     while(num>0){
+//         count++
+//         num = parseInt(num / 10);
+//     }
+//     console.log(count);
+//     digit.close()
+    
+// })
+
+// Q21 Write a program to print numbers to 1 to 10 but skip whose divisble by 3 using continue keyword.
+
+// let sp = 1, ep = 10;
+// while(sp<=10){
+//     if(sp%3!==0){
+//         console.log(sp);
+        
+//     }
+//     sp = sp + 1
+// }
+
+// Q22 Write a program to keep taking input from the user until he given a negative number.
+
+// let given = require("readline").createInterface({
+//     input:process.stdin,
+//     output:process.stdout
+// })
+// given.question("Enter a number:",function(first){
+//     let num = Number(first);
+//     while(num >=0 || num <= 0){
+//         if(num >= 0){
+//          given();
+            
+
+//         }
+//         else if(num<=0){
+//             console.log("found a negative numer to stop the loop");
+            
+//         }
+//         else{
+//             console.log("invalid input");
+            
+//         }
+
+        
+//     }
+//     console.log(num);
+    
+//     given.close()
+// })
+
+// Q23  Write a program to take two numbers from the user and print the count of numbers present between them.
+
+// let present = require("readline").createInterface({
+//     input:process.stdin,
+//     output:process.stdout,
+// })
+// present.question("Enter a starting number:",function(first){
+//     present.question("Enter a ending number:",function(second){
+//         let a = Number(first);
+//         let b = Number(second);
+//         let count = 0;
+//         while(a<b){
+//         if(++a)   {
+//             count++
+//             a= a +1 
+//         }
+        
+            
+//         }
+//         console.log(count);
+        
+//     })
+// })
+
+
+
+// Q25 Prime number
+
+// let user = 5;
+// let sp = 1 ;
+// let count = 0;
+
+// while(sp<=user){
+//     if(user%sp==0){
+//         count++
+//     }
+//     sp++
+// }
+// if(count===2){
+//     console.log("prime number");
+    
+// }
+// else{
+//     console.log("Not a prime number");
+    
+// }
+
+// prime number second method
+
+// let user = 11;
+// let sp = 2;
+// let count = 0;
+
+// while(sp<=user-1){
+//     if(user%sp==0){
+//         count++
+//     }
+//     sp++
+// }
+// if(count==0){
+//     console.log("Prime number");
+    
+// }
+// else{
+//     console.log("Not a Prime number");
+    
+// }
+
+
+// 3rd method prime number 
+
+// let user = 5;
+// let sp = 2;
+// let count = 0;
+// while(sp<=user-1){
+//     if(user%sp==0){
+//         count++
+//     }
+//     sp++
+// }
+// if(count==0){
+//     console.log("Prime number");
+    
+// }
+// else{
+//     console.log("Not a prime number");
+    
+// }
