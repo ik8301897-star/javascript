@@ -82,26 +82,47 @@
 
 // Q9 Write a program to take two numbers from the user and print the prime number present between them.
 
-let num1 = 3 , num2 = 6 ,  count = 0
+// let num1 = 3 , num2 = 6 ,  count = 0
 
-while(num1<=num2){
-    count = 0;
-    for( let sp = 1;sp<=num1;sp++){
-        if(num1 % sp ===0){
-            count++        
-        }     
+// while(num1<=num2){
+//     count = 0;
+//     for( let sp = 1;sp<=num1;sp++){
+//         if(num1 % sp ===0){
+//             count++        
+//         }     
    
-    }
-    if(count==2){
-        console.log(num1);
+//     }
+//     if(count==2){
+//         console.log(num1);
         
-    }
+//     }
  
     
    
     
-    num1++
+//     num1++
+// }
+
+
+let num = 672;
+let max = -9999;
+let min = 9999;
+
+while(num>0){
+    let rem = num % 10;
+    if(rem < min){
+        min = rem;
+    }
+    if(rem>max){
+        max = rem
+    }
+    num =  parseInt(num / 10);
 }
+console.log(max);
+console.log(min);
+
+
+
 
 
 
