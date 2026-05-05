@@ -138,13 +138,90 @@
 //  console.log("Evencount =", evencount);
 //  console.log("Oddcount =",oddcount);
  
+
+
+
+//  AARAY ODD/EVEN QUESTION      
+
+// let arr = [11,22,8,3,87,33,45,98,76];
+
+// let evenarr = [];
+// let oddarr = [];
+
+// for(let i = 0; i<arr.length ; i++){
+//    if(arr[i] % 2 == 0){
+//       evenarr[evenarr.length] = arr[i];
+//    }
+//    else{
+//       oddarr[oddarr.length] = arr[i];
+//    }
+// }
+
+// console.log("Even :", evenarr);
+// console.log("Odd :", oddarr);
+
+
+
+
+
+
+//  ARRAY MERGE QUESTION   
+
+// let arr1 = [33,22,44];
+// let arr2 = [323,98,32];
+//  let arr3 = [];
+
+//  for(let i = 0 ; i<arr1.length ; i++){
+//    arr3[arr3.length]= arr1[i];
+//  }
+//  for(let i = 0 ; i<arr2.length ; i++){
+//    arr3[arr3.length] = arr2[i]
+//  }
+
+//  console.log("arr3 =", arr3);
  
-let n = 5;
-let arr = [2,4,6,90,1];
- for(let i = 0; i<n ; i++){
-    console.log("Output=", arr[i]);
-    
- }
+
+
+// ARRAY MIN/MAX 
+
+
+// let arr = [22,33,43,12,34,99,938389];
+// let max = -9999999;
+
+// for(let i = 0; i<arr.length ; i++){
+//   if(max< arr[i]){
+//     max = arr[i]
+//   }
+// }
+// console.log(max);
+
+
+// let arr = [22,38,8,930,937,21];
+// let min= 999999;
+
+// for(let i = 0; i<arr.length ; i++){ 
+//   if(min>arr[i]){
+//     min = arr[i]
+//   }
+// }
+// console.log(min);
+
+
+
+// REVERSE ARRAY
+
+let arr = [33,23,45,21,12];
+
+for(i=arr.length-1 ; i>=0 ; i--){
+  console.log(arr[i]);
+  
+}
+// console.log(arr[i]);
+
+
+
+
+
 
 
 
