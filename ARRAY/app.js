@@ -210,13 +210,168 @@
 
 // REVERSE ARRAY
 
-let arr = [33,23,45,21,12];
+// let arr = [33,23,45,21,12];
 
-for(i=arr.length-1 ; i>=0 ; i--){
-  console.log(arr[i]);
+// for(i=arr.length-1 ; i>=0 ; i--){
+//   console.log(arr[i]);
   
-}
-// console.log(arr[i]);
+// }
+// // console.log(arr[i]);
+
+
+
+
+// MODERN LOOPS :-   reduce();
+
+// let arr = [334,23,2,3];
+
+// let total = arr.reduce((sum,arr)=>sum + arr,0);
+// console.log(total);
+
+
+// let arr = [2,4,6];
+// let factorial = arr.reduce((fact,arr)=>fact * arr,1);
+// console.log("Factorial =",factorial);
+
+
+// let arr = [2,4,6];
+// let fact = 1;
+
+// for(let i = 0; i<arr.length; i++){
+//   fact = fact * arr[i];
+// }
+// console.log("factorial =",fact);
+
+
+
+// MODERN LOOP :-  filter();
+
+
+
+// greater than 20
+// let arr = [83,38,93,1,2,3,938,83];
+// let newarr = arr.filter((arr)=>(arr>20))
+// console.log(newarr);
+
+
+// even number 
+
+// let arr = [3,9,86,23,28,34,87,98];
+// let even = arr.filter((arr)=>(arr% 2 ==0))
+// console.log("Even Number =",even);
+
+
+//  odd number
+
+// let arr = [2,5,7,98,736,53,23,25,26,64];
+// let odd = arr.filter((arr)=>(arr % 2 ==1));
+// console.log("Odd number =",odd);
+
+
+// let arr = [33,43,45,43,12,3,4];
+// let newarr = arr.filter((arr)=>(arr % 2 ==0));
+// console.log("Even Number =",newarr);
+
+
+// let arr = [34,32,11,21,23,45,98,4];
+// let even =[];
+// let odd =[];
+
+// for(let i = 0; i<arr.length; i++){
+//   if(arr[i] % 2 ==0){
+//     even[even.length] = arr[i];
+//   }
+//   else{
+//     odd[odd.length] = arr[i]
+//   }
+// }
+// console.log("Even Number",even);
+// console.log("Odd Number:",odd);
+
+
+
+
+
+
+// let name = ["Ishu","Virat","Rohit","Travis"]
+
+// for(let i = 0;i<name.length ; i++){
+//     console.log("Name =",name[i]);
+    
+// }
+
+
+// let student = ["Ishu","Virat","Rohit", "Dhoni"];
+
+// for(let stu of student){
+//     console.log("Student =",stu);
+    
+// }
+
+
+// let marks = [85,97,44,37,76,60];
+// let sum = 0;
+// let average = 0;
+
+// for(let i = 0; i<marks.length ; i++){
+//     sum = sum + marks[i];
+//     average = sum / marks.length
+
+   
+
+// }
+
+//  console.log("average =",average);
+
+
+
+
+// let items = [250,645,300,900,50];
+
+// for(let i = 0; i<items.length ; i++){
+//     let offer = items[i] / 10;
+//     items[i] -= offer;
+//     console.log(i,items[i]);
+
+
+
+
+// let n = prompt("enter a number")
+
+// let arr = [];
+
+// for(let i = 0; i<n ; i++){
+//     arr[i] = i
+// }
+// console.log(arr);
+
+
+let arr = [1,2,3,99,383,833,4];
+
+let result = arr.reduce((sum,value) =>{
+    return sum > value ? sum : value
+})
+
+
+console.log(result);
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

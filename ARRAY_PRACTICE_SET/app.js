@@ -174,7 +174,7 @@
 // let arr = [32,89,52,6,10];
 // let max = -999999;
 // let min = 999999;
-
+3
 // for(let i = 0; i<arr.length ; i++){
 //   if(max<arr[i]){
 //     max = arr[i];
@@ -192,30 +192,34 @@
 
 // Q14  Write a program to find the first repeating element in an array?
 
-let arr = [3,2,4,7,2,9,5,1,2];
+// let arr = [2,4,7,2,9,5,1,2];
 
-for(let i = 0; i < arr.length; i++){
-    let count = 1;
+// for(let i = 0; i < arr.length; i++){
+//     let count = 1;
 
-    for(let j = i + 1; j < arr.length; j++){
-        if(arr[i] == arr[j]){
-            count++;
-        }
-    }
+//     for(let j = i + 1; j < arr.length; j++){
+//         if(arr[i] == arr[j]){
+//             count++;
+//         }
+//     }
+//       console.log(arr[i],"is repeated,",count);
+// }
+  
+    
+    
+//     // check karo ki ye element pehle aa chuka hai ya nahi
+//     let isVisited = false;
+//     for(let k = 0; k < i; k++){
+//         if(arr[k] == arr[i]){
+//             isVisited = true;
+//             break;
+//         }
+//     }
 
-    // check karo ki ye element pehle aa chuka hai ya nahi
-    let isVisited = false;
-    for(let k = 0; k < i; k++){
-        if(arr[k] == arr[i]){
-            isVisited = true;
-            break;
-        }
-    }
-
-    if(!isVisited && count > 1){
-        console.log(arr[i], "is repeated", count, "times");
-    }
-}
+//     if(!isVisited && count > 1){
+//         console.log(arr[i], "is repeated", count, "times");
+//     }
+// }
 
 
 
@@ -313,13 +317,48 @@ for(let i = 0; i < arr.length; i++){
 
 
 
+// LET PRATICE 
+
+// Q  We are given array of marks of students. filter out of the marks of students taht scored 90+.
+
+// let marks = [87,98,76,91,98,34,65,34,90];
+
+// let result = marks.filter((value)=>{
+//     return value > 90;
+// })
+// console.log(result);
+
+
+
+// let n = [1,2,3,4];
+
+// let arr = [];
+
+// for(let i = 0; i<n ; i++){
+//   arr[i] = i
+// }
+
+// console.log(arr);
 
 
 
 
 
+// Q  Use the reduce method to calculate sum of all numbers in the array.
+
+// let arr = [1,2,3,4];
+
+// let result = arr.reduce((sum,value) =>(sum + value));
+// console.log(result);
 
 
+
+// Q  Use the reduce method to calculate product of all numbers in the array.
+
+// let arr = [1,2,3,4,5];
+
+// let result = arr.reduce((fact , value)=> (fact * value),1)
+// console.log(result);
 
 
 
