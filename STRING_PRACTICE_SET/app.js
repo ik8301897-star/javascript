@@ -322,3 +322,37 @@
 //     }
 // }
 // console.log(str1);
+
+
+
+
+// Q18 Write a JavaScript program to count the frequency of each character in a string.
+
+// let str = "hello";
+// let count = 0;
+
+// for(let i = 0; i<str.length; i++){
+//   for(let j = i+1; j<str[i].length; j++){
+
+
+//   }
+    
+
+// }
+
+
+
+
+
+// Q20  Write a javascript program to reverse a complete string using.
+
+// let str = "JavaScript";
+
+// for(let i = str.length-1; i>=0; i--){
+   
+//     process.stdout.write(`${str[i]}`)
+// }
+
+
+
+
