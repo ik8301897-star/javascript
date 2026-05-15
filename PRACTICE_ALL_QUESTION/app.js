@@ -416,24 +416,24 @@
 
 // Q29  Write a program to take a number from the user and check whether a number is a prime number or not.
 
-let num = 12;
-let sp = 1;
-let count = 0;
+// let num = 12;
+// let sp = 1;
+// let count = 0;
 
-while(sp<=num){
-    if(num % sp == 0){
-        count++
-    }
-    sp++
-}
-if(count === 2){
-    console.log("Prime Number");
+// while(sp<=num){
+//     if(num % sp == 0){
+//         count++
+//     }
+//     sp++
+// }
+// if(count === 2){
+//     console.log("Prime Number");
     
-}
-else{
-    console.log("Not a prime number");
+// }
+// else{
+//     console.log("Not a prime number");
     
-}
+// }
 
 
 

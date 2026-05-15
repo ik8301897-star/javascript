@@ -31,6 +31,18 @@
 // console.log(car);
 
 
+//  * Using Constructor function ------
+
+
+// function student(studentname,studentid){
+//     this.name = studentname;
+//     this.id = studentid;
+// }
+
+// let s1 = new student("Ishu kumar",999);
+// console.log(s1);
+
+
 // (B)   Accessing Object Properties
 //  * Dot Notation ✅-----
 
@@ -159,22 +171,21 @@
 
 //   let {name,age} = user;
 
-//   console.log(name);
-//   console.log(age);
-  
+//   console.log("Name :",name,        "Age :", age);
+ 
   
 // 🔹 Renaming while destructuring:
 
-// let user = {
-//     name:"ishukumar",
-//     age: 18
-// };
+let user = {
+    name:"ishukumar",
+    age: 18
+};
 
-// let{
-//     name: userName,
-//     age : userAge
-// } = user
-// console.log(userName);
+let{
+    name: userName,
+    age : userAge
+} = user
+console.log(userName);
 
 
 
@@ -249,3 +260,173 @@
 // obj2.name = "Amit"
 
 // console.log(obj1); //   { name: 'ishu' }
+
+
+
+
+
+//  AARAY Destructuring
+
+
+// let arr = [1,2,3,4];
+
+// let [a,b,c,d] = arr;
+
+// console.log(`a = ${a}    b = ${b}    c = ${c}     d = ${d}`);
+
+
+
+
+// OBJECT DESTRUCTURING
+
+// let obj = {
+//     name: "Ishu",
+//     id: 999
+// };
+
+// let {name,id} = obj;
+
+// console.log(`name = ${name}    id = ${id}`);
+
+
+
+// OBJECT KEYS 
+
+// let student = {
+//     name : "Ishu kumar",
+//     id : 999,
+//     course : "Full stack"
+// };
+
+// let keys = Object.keys(student);
+// console.log(keys);
+
+// for(key of keys){
+//     console.log(student[key]);
+    
+// }
+
+
+
+// let student = {
+//     name: "Ishu Kumar",
+//     id: 999,
+//     course: "Mern stack"
+// };
+
+// let keys = Object.keys(student);
+
+// console.log(keys);
+
+// for(key of keys){
+//     console.log(student[key]);
+    
+// }
+
+
+
+// OBJECT VALUE----
+
+// let student = {
+//     name:"ishu",
+//     id: 888
+// };
+
+// let keys = Object.values(student);
+// console.log(keys);
+
+
+
+
+
+// OBJECT ENTRIES ------
+
+// let student = {
+//     name:"ishu",
+//     id:999
+// };
+
+// let entry = Object.entries(student);
+// console.log(entry);
+
+// for([key,value ]of entry){
+//     console.log("Key =",key,  "value =", value);
+    
+// }
+
+
+
+
+// OBJECT ASSIGN ------
+
+// let obj1 = {
+//     name: "ishu ",
+//     id: 88
+// };
+
+// let obj2 = {
+//     name1 :"rohit",
+//     id1 : 87
+// };
+
+// let obj3 = Object.assign({},obj1,obj2);
+// console.log(obj3);
+
+
+
+
+
+// OBJECT FREEZE -----
+
+// let obj = {
+//     name: "Ishu",
+//     id: 99
+// };
+// console.log(obj);
+
+// Object.freeze(obj);
+
+// obj.id = 22;
+// console.log(obj);
+
+
+
+
+// OBJECT SEAL ----- BSS UPDATE KAR SAKTE HAI DELETE YA ADD NHI KAR SAKTE HAI
+//  let obj = {
+//     name:"ishu",
+//     id:87
+//  };
+
+//  console.log(obj);
+
+//  Object.seal(obj);
+
+//  obj.id = 1;
+
+//  obj.roll = 234;
+
+
+ 
+//  console.log(obj);
+ 
+ 
+
+
+
+// OBJECT HASOWN PROPERTY ----- OBJECT MAI KEY HAI YA NHI WO CHECK KARTA HAI AUR ANSWER TRUE YA FALSE MAI DETA HAI
+
+// let obj = {
+//     name : "Ishu",
+//     age : 19,
+//     roll : 1
+// };
+
+// console.log(obj.hasOwnProperty("age"));
+// console.log(obj.hasOwnProperty("id"));
+
+
+
+
+
+
