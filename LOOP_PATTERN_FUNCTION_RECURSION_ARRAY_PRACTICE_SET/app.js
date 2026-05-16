@@ -792,4 +792,302 @@
 
 
 
+// Q46
 
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+//  *******
+//   *****
+//    ***
+//     *
+
+
+// let  num = 5;
+// let a = 1;
+
+// for(let i = 1; i<=num ; i++){
+//     for(let j = 1; j<=num-i ; j++){
+//         process.stdout.write(" ")
+//     }
+//     for(let k = 1; k<=a; k++){
+//         process.stdout.write("*")
+//     }
+//     a= a+ 2
+//     console.log();
+    
+    
+// }
+// let b = num + 2;
+
+// for(let i = 1; i<=num-1 ; i++){
+//     for(let j = 1; j<=i; j++){
+//         process.stdout.write(" ")
+//     }
+//     for(let k = 1; k<=b ; k++){
+//         process.stdout.write("*")
+//     }
+
+//     b = b-2
+//     console.log();
+    
+// }
+
+
+
+
+// Q47 
+
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+
+
+// let num = 4;
+// let a = 1;
+
+// for(let i = 1; i<=num ; i++){
+//     for(let j = 1; j<=i; j++){
+//         process.stdout.write(`${a} `)
+//         a++
+//     }
+    
+//     console.log();
+    
+// }
+
+
+// LOOP QUESTION END ------------------------------------------------------------------------------------------
+
+
+
+// FUNCTION PRACTICE QUESTION START -----------------------------------------------------
+
+
+
+// Q48  Ek function banao jo hello print kare.
+
+// function printHello (){
+//     console.log("Hello");
+    
+// }
+
+// printHello();
+
+
+
+// Q49  Function banao jo 2 numbers add kare.
+
+// function addTwoNum(a,b){
+//     return a + b;
+// }
+
+// let result = addTwoNum(3,5);
+// console.log(result);
+
+
+
+// Q50  Function banao jo square return kare.
+
+// function square(num){
+//     return num * num;
+// }
+
+// let result = square(5);
+// console.log(result);
+
+
+
+// Q51 Function banao jo even/odd check kare.
+
+// function checkOddEven(num){
+//     if(num % 2 ==0){
+//         return "Even Number"
+//     }
+//     else{
+//         return "Odd number"
+//     }
+// }
+
+// let result = checkOddEven(3);
+// console.log(result);
+
+
+
+// Q52  Function banao jo biggest of 2 numbers bataye.
+
+// function biggestNumber(a,b){
+//     if(a>b){
+//         return a  ;
+//     }
+//     else{
+//         return b ;
+//     }
+// }
+
+// let result = biggestNumber(32,93);
+// console.log(result);
+
+
+
+
+// Q53 Write a program to call a function that returns the subtraction of two numbers and print the result.
+
+// function subtraction(a,b){
+//     return a - b;
+// }
+// let result = subtraction(23,11);
+// console.log(result);
+
+
+
+// Q54 Write a program to call a function that prints the multiplication of two numbers.
+
+// function multiplication(a,b){
+//     return a * b;
+// }
+// let result = multiplication(150,2);
+// console.log(result);
+
+
+
+// Q55 Write a program to call a function that takes two user inputs and passes it to a function that returns the addition of these numbers.
+
+// function add (a,b){
+//     return a + b;
+// }
+// let result = add(33,26);
+// console.log(result);
+
+
+
+
+// Q56 Write a program to call a function that takes user input and pass it to a function that prints its table.
+
+// function print (num){
+
+//     for(let i = 1; i<=10 ; i++){
+//         console.log(num ,"*",i , "=", num * i);
+        
+//     }
+// }
+
+// print(4);
+
+
+
+// Q57 Write a program where the user will provide an integer as input. create a function digitcount() that.
+
+// function digitCount(num){
+//     let count = 0;
+
+//     while(num > 0){
+//         count++
+//         num = parseInt(num/ 10)
+//     }
+//     console.log(count);
+    
+// }
+// digitCount(12345);
+// digitCount(3);
+
+
+
+// Q58  Write a program where the user will provide an integer as input. create a function reverseNumber() that.
+
+// function reverseNumber(num){
+//     let rev = 0;
+//     while(num>0){
+//         rem = num % 10;
+//         rev = rev * 10 + rem;
+//         num = parseInt(num / 10);
+
+//     }
+//     console.log(rev);
+    
+// }
+// reverseNumber(8765);
+
+
+
+// Q59 Write a function findGCD ( a,b) that calculates and returns the greatest common divisor (GCD) of two numbers using the Euclidean algorithm.
+
+// function greatest(num1,num2){
+//     let factor = 0;
+//     for(let i = 1; i<=num1; i++){
+//         if(num1 % i == 0 && num2 % i ==0){
+//             factor = i;
+//         }
+//     }
+//     console.log(factor);
+    
+// }
+// greatest(56,98);
+
+
+
+// Q60 Write a program to call a function that takes user input and tells if it is prime or not.
+
+// function prime(num){
+//     let count = 0;
+//     for(let i = 1; i<=num; i++){
+//         if(num % i ==0){
+//             count++
+//         }
+//     }
+//     if(count ==2){
+//         console.log("yes it is prime ");
+        
+//     }
+//     else{
+//         console.log("it is not prime");
+        
+//     }
+// }
+// prime(7);
+// prime(8);
+
+
+
+
+// Q61 Function banao jo user ka naam print kare.
+
+// function userName(name){
+//     console.log("Hello",name);
+    
+// }
+// userName("ishu")
+
+
+
+// Q62 3 numbers me sabse bada number return karo.
+
+// function biggest(a,b,c){
+//     if(a>b && a>c){
+//         return a
+//     }
+//     else if(b>a && b>c){
+//         return b
+//     }
+//     else{
+//         return c
+//     }
+// }
+//  let result = biggest(12,9,10);
+//  console.log("Biggest no is",result);
+
+
+
+
+//Q63 Reverse String Function
+
+// function reverseString(string){
+//     for(let i = string.length-1 ; i>=0 ; i--){
+//         process.stdout.write(`${string[i]}`)
+//     }
+// }
+// reverseString("hello")
+ 
