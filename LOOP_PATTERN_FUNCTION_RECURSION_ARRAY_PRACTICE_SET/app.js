@@ -1091,3 +1091,208 @@
 // }
 // reverseString("hello")
  
+
+
+
+
+// FUNCTION END ---------------------------
+
+
+
+// RECURSION START ----------------------------------------
+
+//  Q64 Write a recursive function to print numbers from 1 to N.
+
+// let num = 1;
+
+// function print (){
+//     if(num  > 10){
+//         return;
+//     }
+//     console.log(num++);
+//     print()
+    
+
+// }
+// print();
+
+
+
+
+// Q65 Write a recursive function to print numbers from N to 1.
+
+
+
+// function print(num,ep){
+//     if(num > ep){
+//         return;
+//     }
+//     print(num+1,ep )
+//     console.log(num);
+    
+// }
+
+// print(1,10);
+
+
+
+// Q66 Find the sum of first N natural numbers using recursion.
+
+// function sum(num){
+//     if(num ==1){
+//         return 1;
+//     }
+//     return num + sum(num-1);
+// }
+// let result = sum(5);
+// console.log(result);
+
+
+
+
+// Q67  Find factorial of a number using recursion. 
+
+// function factorial (num){
+//     if(num == 1){
+//         return 1;
+//     }
+//     return num * factorial(num-1);
+// }
+// let result = factorial(5);
+// console.log(result);
+
+
+
+
+// Q68 ✅ 1. Print 1 to N
+
+// let num = 1;
+// function printnum(){
+//     if(num>10){
+//         return;
+//     }
+//     console.log(num++);
+
+//     printnum();
+    
+// }
+// printnum();
+
+
+
+// Q69 Print N to 1.
+
+
+
+// function printReverse(num,ep){
+//     if(num>10){
+//         return;
+//     }
+//     printReverse(num+1,ep);
+//     console.log(num);
+    
+// }
+// printReverse(1,10);
+
+
+// Q70   ✅  Print Even Numbers.
+
+// let num = 10, sp = 1;
+// function printEvenNumber(){
+//     if(sp>num){
+//         return;
+//     }
+//    if(sp % 2 ==0){
+//     console.log(sp);
+    
+//    }
+//    sp++
+//    printEvenNumber()
+// }
+// printEvenNumber();
+
+
+
+// Q71 ✅  Print Odd Numbers.
+
+// let num = 10 , sp = 1;
+
+// function printOddNumber(){
+//     if(sp>num){
+//         return;
+//     }
+//     if(sp % 2==1){
+//         console.log(sp);
+        
+//     }
+//     sp++
+//     printOddNumber()
+// }
+// printOddNumber()
+
+
+
+
+// Q72 ✅  Sum of Natural Numbers.
+
+// function sum(num){
+//     if(num ==1){
+//         return 1;
+//     }
+//     return num + sum(num - 1);
+// }
+// let result = sum(5);
+// console.log(result);
+
+
+
+// Q73 ✅  Factorial
+
+// function factorial(num){
+//     if(num == 1){
+//         return 1;
+//     }
+//     return num * factorial(num -1)
+// }
+// let result = factorial(5);
+// console.log(result);
+
+
+
+
+// Q74 ✅  Sum of Digits.
+
+// let sum = 0;
+
+// function sumOfDigit(num){
+//     if(num==0){
+//         return sum;
+//     }
+//     rem = num % 10;
+//     sum = sum + rem;
+//     num = parseInt(num / 10);
+
+//     return sumOfDigit(num)
+
+// }
+// let result = sumOfDigit(1234);
+// console.log(result);
+
+
+
+
+// Q75 ✅  Count Digits.
+
+let count = 0;
+
+function countDigit(num){
+    if(num ==0){
+        return count;
+    }
+    count++ 
+    num = parseInt(num / 10);
+
+    return countDigit(num)
+}
+let result = countDigit(1234);
+console.log(result);
