@@ -1283,16 +1283,738 @@
 
 // Q75 ✅  Count Digits.
 
+// let count = 0;
+
+// function countDigit(num){
+//     if(num ==0){
+//         return count;
+//     }
+//     count++ 
+//     num = parseInt(num / 10);
+
+//     return countDigit(num)
+// }
+// let result = countDigit(1234);
+// console.log(result);
+
+
+
+
+// Q76 ✅  Reverse a Number
+
+// let reverse = 0;
+
+// function reverseNumber(num){
+//     if(num ==0){
+//         return reverse;
+//     }
+//     let rem = num % 10;
+//     reverse = reverse*10 + rem;
+//     num = parseInt(num / 10);
+
+//    return reverseNumber(num)
+// }
+// let result =reverseNumber(4321);
+// console.log(result);
+
+
+
+//Q77 ✅  Product of Digits
+
+// let product = 1;
+
+// function productDigit(num){
+//     if(num==0){
+//         return product;
+//     }
+//     let rem = num % 10;
+//     product = product * rem
+//     num = parseInt(num / 10);
+
+//     return productDigit(num)
+// }
+// let result = productDigit(234);
+// console.log(result);
+
+
+
+
+// Q78 ✅  Print Table Using Recursion
+
+// let sp = 1 , num = 3;
+
+// function printTable(){
+//     if(sp>10){
+//         return 
+//     }
+//     console.log(num * sp++);
+   
+//     printTable()
+    
+// }
+// printTable()
+
+
+
+
+// Q79 ✅  Check Prime Number.
+
+// let sp = 1, count = 0;
+// function checkPrimeNumber(num){
+//     if(sp>num){
+//         return count
+//     }
+//     if(num % sp == 0){
+//         count++
+//     }
+    
+//     sp++
+//    return checkPrimeNumber(num)
+// }
+
+
+// if(count == 2){
+//         console.log("Prime Number");
+        
+//     }
+//     else{
+//         console.log("Not a Prime Number");
+        
+//     }
+//     checkPrimeNumber(8)
+
+
+
+// RECURSION QUESTION END ---------------------------------------------------------
+
+
+
+// ARRAY QUESTION START ---------------------------------------------------------------
+
+
+
+// Q80 Write a program to create an array of five inputs from the user and display the elements of the array. 
+
+// let arr = [2,4,6,90,1];
+
+// for(let i = 0; i<arr.length ; i++){
+//     console.log(arr[i]);
+    
+// }
+
+
+
+
+// Q81 Write a program to create an Array and take input from the user and print their sum.
+
+// let arr = [2,3,4,5];
+// let sum = 0;
+
+// for(let i = 0; i<arr.length ; i++){
+//     sum = sum + arr[i]
+// }
+// console.log(sum);
+
+
+
+// Q82 Write a program to create an Array and take input from the user and print the average of the elements. 
+
+// let arr = [6,7,3,9,10] ;
+// let sum = 0;
+
+// for(let i = 0; i<arr.length; i++){
+//     sum = sum + arr[i]
+// }
+// let average = sum / arr.length;
+// console.log(average);
+
+
+
+// Q83  WAP to take input from users in an array and display them in reverse order?
+
+// let arr = [1,7,9,4,8];
+// let arr1 = [];
+
+// for(let i = arr.length-1 ; i>=0 ;i--){
+//     arr1[arr1.length] = arr[i]
+// }
+// console.log(arr1);
+
+
+
+
+// Q84 Write a program to create an Array and take input from the user and print the product of the elements . 
+
+
+// let arr =  [1,2,3,4,5]   ;
+// let product = 1;
+
+// for(let i = 0 ; i<arr.length; i++){
+//     product = product * arr[i]
+// }
+// console.log(product);
+
+
+
+
+// Q85  Write a program to create an Array and take input from the user and print the average of the sum of odd numbers and average of the sum of even numbers.
+
+// let arr =  [4,3,2,5,6] ;
+// let sumEven = 0 , sumOdd = 0;
+// let evenArr = [];
+// let oddArr = [];
+
+// for(let i = 0; i<arr.length; i++){
+//     if(arr[i] % 2 ==0){
+//         evenArr[evenArr.length] = arr[i]
+//         sumEven = sumEven + arr[i]
+//     }
+//     else{
+//         oddArr[oddArr.length] = arr[i];
+//         sumOdd = sumOdd + arr[i]
+//     }
+// }
+// console.log("sumeven =",sumEven);
+// console.log("sumodd =",sumOdd);
+
+// let averageOdd = sumOdd / oddArr.length;
+// console.log("Average of odd =",averageOdd);
+
+// let averageEven = sumEven / evenArr.length;
+// console.log("Average of Even =",averageEven);
+
+
+
+
+
+// Q86 Write a program to take input from the user for an array, but only allows elements that are 0 or 1. Any other number entered by the user will not be stored in the array .
+
+// let arr = [9,1,2,0,1,9,3,0,1];
+// let arr1= [];
+
+// for(let i = 0;i<arr.length ; i++){
+//     if(arr[i] ==0 || arr[i] ==1){
+//         arr1[arr1.length] = arr[i]
+//     }
+// }
+// console.log(arr1);
+
+
+
+
+// Q87  Write a program to take an array and an index number from the user and print the index value. 
+
+// let arr = [ 8,55,4,2,1 ];
+// let user = 1;
+
+// for(let i = 0; i<arr.length;i++){
+//     if(user == i){
+//         console.log(arr[i]);
+        
+//     }
+// }
+
+
+
+
+// Q88 Write a program to create 2 arrays and merge them into a third array. 
+
+// let arr1 = [4,9,7,2,11];
+// let arr2 = [6,3,8,5];
+// let arr3 = [];
+
+// for(let i = 0 ; i<arr1.length ; i++){
+//     arr3[arr3.length] = arr1[i];
+// }
+// for(let i= 0 ; i<arr2.length; i++){
+//     arr3[arr3.length] = arr2[i]
+// }
+// console.log(arr3);
+
+
+
+// Q89 Write a program to create an Array and take input from the user and print the sum of even numbers and sum of odd numbers. 
+
+// let arr = [2,8,10,1,3];
+// let evenArr = [];
+// let oddArr = [];
+
+// let sumEven = 0 , sumOdd = 0;
+
+// for(let i = 0 ; i<arr.length ; i++){
+//     if(arr[i] % 2 ==0){
+//         evenArr[evenArr.length] = arr[i];
+//         sumEven = sumEven + arr[i]
+//     }
+//     else{
+//         oddArr[oddArr.length] = arr[i];
+//         sumOdd = sumOdd + arr[i]
+//     }
+
+// }
+// console.log("Sum of even =", sumEven);
+// console.log("Sum of Odd =",sumOdd);
+
+
+
+
+// Q90  Write a program to take an array from the user and separate the even and odd elements in two different arrays. 
+
+// let arr= [2,5,6,3,8];
+
+// let evenArr = [];
+// let oddArr = [];
+
+// for(let i = 0; i<arr.length ; i++){
+//     if(arr[i] % 2==0){
+//         evenArr[evenArr.length] = arr[i]
+//     }
+//     else{
+//         oddArr[oddArr.length] = arr[i];
+//     }
+// }
+// console.log("Even Array =",evenArr);
+// console.log("Odd Array =",oddArr);
+
+
+
+
+
+// Q91 Write a program to create an Array and take input from the user and print the largest element and smallest element.
+
+
+// let arr = [32,89,52,6,10] ;
+
+// let largest = -99999;
+// let smallest = 9999;
+
+// for(let i = 0; i<arr.length;i++){
+//     if(arr[i] > largest){
+//         largest = arr[i];
+//     }
+// if(arr[i] < smallest){
+//     smallest = arr[i]
+// }
+// }
+// console.log("largest =",largest);
+// console.log("smallest =",smallest);
+
+
+
+
+// Q92  Write a program to find the first repeating element in an array? 
+
+// let arr = [3,2,4,7,2,9,5,1,2];
+
+// let repeat = false ;
+
+// for(let i = 0; i<arr.length; i++){
+//     for(let j = i+1; j<arr.length; j++){
+//         if(arr[i] ==arr[j]){
+//             console.log(arr[i]);
+//             repeat = true;
+//             break;
+            
+//         }
+//     }
+//     if(repeat){
+//     break;
+// }
+// }
+
+
+
+
+
+// Q93  Write a program to take an array and take a number from the user and check if the given number is present in the array or not.
+
+// let arr = [ 8,9,5,4,0 ];
+// let number = 6;
+// let flag = false;
+
+// for(let i = 0; i<arr.length ; i++){
+//     if(number ==arr[i]){
+//         console.log("the given number is  present in the array.");
+//         flag = true;
+//         break;
+        
+//     }
+// }
+// if(!flag){
+//     console.log("the given number is not present in the array.");
+    
+// }
+
+
+
+
+// Q94 Write a program to take an array from the user and arrange the elements in ascending order.
+
+// let arr = [ 2,9,5,0,3 ] ;
+
+// for(let i = 0; i<arr.length; i++){
+//     for(let j = i+1; j<arr.length; j++){
+//         if(arr[i]>arr[j]){
+//             let temp = arr[i];
+//             arr[i] = arr[j];
+//             arr[j] = temp;
+//         }
+//     }
+// }
+// console.log(arr);
+
+
+
+
+// Q95 Write a program to take an array from the user and arrange the elements in descending order.
+
+// let arr = [ 5,7,2,9,1 ] ;
+
+// for(let i = 0; i<arr.length; i++){
+//     for(let j = i+1; j<arr.length; j++){
+//         if(arr[i]<arr[j]){
+//             let temp = arr[i];
+//             arr[i] = arr[j];
+//             arr[j] = temp;
+//         }
+//     }
+// }
+// console.log(arr);
+
+
+
+
+
+// Q96 Write a program to reverse the elements of an array. 
+
+// let arr = [11,12,13,14];
+// let temp;
+
+// for(let i= 0; i<arr.length/2 ; i++){
+//     let j = arr.length -1 -i;
+//     temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp
+// }
+// console.log(arr);
+
+
+
+// Q97 Write a program to take no.of row and column from user and input elements and print the matrix.
+
+// let arr = [[9,3,6],[1,3,8]];
+
+// for(let i = 0; i<arr.length; i++){
+//     for(let j = 0 ; j<arr[i].length; j++){
+//         process.stdout.write(`${arr[i][j]}`)
+//     }
+//     console.log();
+    
+// }
+
+
+
+
+// Q98 Write a program to take input in a 2d array and find the sum of elements.
+
+// let arr =[[2,5,8],[9,1,4]];
+// let sum = 0;
+
+// for(let i = 0 ;i<arr.length; i++){
+//     for(let j = 0; j<arr[i].length; j++){
+//         sum = sum+ arr[i][j];
+//     }
+// }
+// console.log(sum);
+
+
+
+
+
+// Q99 Write a program to take input in a 2d array and find the product of elements.
+
+// let arr = [[1,2,3],[6,5,4]];
+// let product = 1;
+
+// for(let i = 0; i<arr.length ; i++){
+//     for(let j = 0; j<arr[i].length; j++){
+//         product = product * arr[i][j]
+//     }
+// }
+// console.log(product);
+
+
+
+
+// Q100 ✅  Print Array Elements
+
+// let arr = [1,2,3,4];
+
+// for(let i = 0; i<arr.length; i++){
+//     console.log(arr[i]);
+    
+// }
+
+
+
+// Q101 ✅  Sum of Array Elements
+
+// let arr = [1,2,3,4,5];
+// let sum = 0;
+
+// for(let i = 0; i<arr.length; i++){
+//     sum = sum + arr[i]
+// }
+// console.log(sum);
+
+
+
+
+// Q102 ✅  Find Maximum Element
+
+// let arr = [3,9,2,7];
+// let max = -99;
+
+// for(let i = 0; i<arr.length; i++){
+//     if(arr[i]>max){
+//         max = arr[i]
+//     }
+// }
+// console.log(max);
+
+
+
+// Q103  ✅  Find Minimum Element
+
+// let arr = [3,9,2,7];
+// let min = 999;
+
+// for(let i = 0; i<arr.length; i++){
+//     if(arr[i]<min){
+//         min = arr[i];
+//     }
+// }
+// console.log(min);
+
+
+
+
+// Q104  ✅  Count Even Numbers
+
+// let arr = [1,2,4,7,8];
+// let count = 0;
+
+// for(let i = 0; i<arr.length; i++){
+//     if(arr[i] % 2==0){
+//         count++
+//     }
+// }
+// console.log(count);
+
+
+
+// Q105 ✅  Count Odd Numbers
+
+// let arr = [1,2,4,7,8];
+// let count = 0;
+
+// for(let i = 0; i<arr.length; i++){
+//     if(arr[i] % 2==1){
+//         count++
+//     }
+// }
+// console.log(count);
+
+
+
+// Q106 Print Reverse Array 
+//  let arr = [1,2,3,4];
+//  let arr1 = [];
+
+//  for(let i = arr.length-1; i>=0; i--){
+//     arr1[arr1.length] = arr[i];
+//  }
+//  console.log(arr1);
+ 
+
+
+
+
+// Q107   ✅  Find Average
+
+// let arr = [2,4,6];
+// let sum = 0;
+ 
+// for(let i = 0; i<arr.length; i++){
+//     sum = sum + arr[i];
+// }
+// let average = sum / arr.length;
+// console.log(average);
+
+ 
+
+
+
+// Q108  ✅  Search an Element
+// let arr = [2,5,8,1];
+// let target = 9;
+// let flag = false;
+
+
+// for(let i = 0; i<arr.length ; i++){
+//     if(arr[i]==target){
+//         console.log("Number is found");
+//         flag = true;
+//         break;
+        
+//     }
+
+// }
+// if(!flag){
+//     console.log("Number is not found");
+    
+// }
+
+
+
+
+// Q109 ✅  Find Second Largest Element.
+
+// let arr = [2,9,7,5];
+// let largest = -9999;
+// let secondLargest = -9999;
+
+// for(let i = 0; i<arr.length; i++){
+//     if(arr[i]>largest){
+//        secondLargest = largest;
+//        largest = arr[i]
+//     }
+//     else if(arr[i] > secondLargest && arr[i] != largest){
+
+//         secondLargest = arr[i];
+//     }
+// }
+// console.log(secondLargest);
+
+
+
+
+// Q110 ✅  Print Each Character
+
+// let arr = "Hello";
+
+// for(let i = 0; i<arr.length; i++){
+//     process.stdout.write(`${arr[i]}   `)
+// }
+
+
+
+
+// Q111  ✅  Count Characters
+
+// let arr = "Hello";
+// let count = 0;
+
+// for(let i = 0; i<arr.length; i++){
+//     count++
+// }
+// console.log(count);
+
+
+
+// Q112 ✅  Reverse String
+
+// let arr = "Hello";
+
+
+// for(let i = arr.length-1; i>=0; i--){
+//     process.stdout.write(`${arr[i]}`)
+
+// }
+
+
+
+// Q113 ✅  Count Vowels.
+
+// let arr = "programming";
+// let vowelcount = 0;
+
+// for(let i = 0; i<arr.length; i++){
+//     if(arr[i]==="a" || arr[i]=="A" || arr[i]=="e" || arr[i]=="E"||arr[i]=="i" || arr[i]=="I"||arr[i]=="o" || arr[i]=="O"||arr[i]=="u" || arr[i]=="U"){
+//         count++
+//     }
+// }
+// console.log(vowelcount);
+
+
+
+// Q114 ✅  Count Consonants
+
+// let arr = "programming";
+// let consonantcount = 0;
+
+// for(let i = 0; i<arr.length; i++){
+//     if(arr[i]!="a" && arr[i]!="A" && arr[i]!="e" && arr[i]!="E" && arr[i]!="i" && arr[i]!="I" &&arr[i]!="o" && arr[i]!="O" && arr[i]!="u" && arr[i]!="U"){
+//         consonantcount++
+//     }
+// }
+// console.log(consonantcount);
+
+
+
+// Q115   ✅  Count Spaces
+
+// let str = "I love JS";
+// let count = 0;
+
+// for(let i = 0; i<str.length; i++){
+//     if(str[i]==" "){
+//         count++
+//     }
+// }
+// console.log(count);
+
+
+
+
+// Q116  ✅  Lowercase to Uppercase
+
+// let str = "hello";
+// let str1 = ""
+
+// for(let i = 0; i<str.length; i++){
+//    str1 = str.toUpperCase(str)
+  
+    
+// }
+// console.log(str1);
+
+
+
+
+// Q117 ✅  Uppercase to Lowercase.
+
+// let str = "HELLO";
+// let str1 = "";
+
+// for(let i = 0; i<str.length; i++){
+//     str1 = str.toLowerCase(str)
+// }
+// console.log(str1);
+
+
+
+
+// Q118  ✅  Frequency of Characters
+
+let str = "hello";
 let count = 0;
 
-function countDigit(num){
-    if(num ==0){
-        return count;
+for(let i = 0; i<str.length; i++){
+    for(let j = i+1; j<str.length; j++){
+        if(str[i]==str[j]){
+            count++
+        }
     }
-    count++ 
-    num = parseInt(num / 10);
-
-    return countDigit(num)
 }
-let result = countDigit(1234);
-console.log(result);
+console.log(count);

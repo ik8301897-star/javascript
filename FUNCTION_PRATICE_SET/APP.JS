@@ -153,3 +153,76 @@ user.question("Enter a Number:",function(even){
     
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Q12. Write a program to take an array from the user and separate the even and odd elements in two different arrays. 
+
+//         INPUT  -    arr=[2,5,6,3,8]                   
+
+//        OUTPUT-   even = [2,6,8] ,       odd = [5,3]
+
+// Q13. Write a program to create an Array and take input from the user and print the largest element and smallest element. 
+
+//        INPUT– [32,89,52,6,10] 
+
+//        OUTPUT– Largest element = 89  ,     Smallest element = 6
+
+// Q14. Write a program to find the first repeating element in an array? 
+
+//         INPUT:[3,2,4,7,2,9,5,1,2]       OUTPUT :  2 is repeated,  count =3
+
+// Q15. Write a program to take an array and take a number from the user and check if the given number is present in the array or not. 
+
+//                   INPUT- [ 8,9,5,4,0 ]                        number = 6 
+
+//                   OUTPUT- the given number is not present in the array.
+
+// Q16. Write a program to reverse the elements of an array. 
+
+//                    INPUT- arr = [ 2,7,9,5,6 ] 
+
+//                   OUTPUT-  arr=[ 6,5,9,7,2 ]
+
+// Q17. Write a program to take an array from the user and arrange the elements in ascending order. 
+
+//                    INPUT-  arr = [ 2,9,5,0,3 ] 
+
+//                    OUTPUT- arr = [ 0,2,3,5,9 ]
+
+// Q18. Write a program to take an array from the user and arrange the elements in descending order. 
+
+//                      INPUT-  [ 5,7,2,9,1 ] 
+
+//                      OUTPUT- [ 9,7,5,2,1 ]
+
+// Q19. Write a program to delete the given element from the array. 
+
+//                       INPUT-   arr = [ 3,7,9,2,4 ]                   Num=2 
+
+//                       OUTPUT-  arr = [ 3,7,9,4 
